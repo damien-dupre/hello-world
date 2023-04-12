@@ -1,2 +1,7 @@
 # hello-world
-my first repo
+my **first** *repo*
+
+- Hi
+- How
+- Are 
+- You?
