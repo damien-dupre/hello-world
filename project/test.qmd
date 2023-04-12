@@ -1,0 +1,36 @@
+---
+title: "Effect of population across the years"
+format: html
+
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+
+unicef_metadata <- read.csv("/cloud/project/unicef_metadata.csv")
+```
+
+
+# my awesome assignment
+
+## thank you professor!
+
+I **love** R and it's *fantastic*
+
+
+```{r}
+unicef_metadata %>%
+  ggplot(aes(year, Population..total)) +
+  geom_point() +
+  theme_bw()
+```
+
+
+
